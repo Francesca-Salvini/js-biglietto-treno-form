@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.ticket-result-row,
+.ticket-generator.row {
+    padding: 10px 20px;
+}
+
+.button {
+    padding: 5px;
+}

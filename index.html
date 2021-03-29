@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcola prezzo biglietto</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        
+    <div class="ticket-generator">
+
+        <!--Input nome utente-->
+        <div class="ticket-generator-row" >
+            <label for="generator-user-name">Nome utente</label>
+            <input id="generator-user-name" type="text">
+        </div>
+        <!--Fine Input nome utente-->    
+
+        <!--Input km da percorrere-->
+        <div class="ticket-generator-row">
+            <label for="generator-km">Km da percorrere</label>
+            <input id="generator-km" type="number">
+        </div>
+        <!-- Fine Input km da percorrere-->
+
+        <!--Select fascia d'età-->
+        <div class="ticket-generator-row">
+            <label for="generator-age">Fascia d'età</label>
+            <select id="generator-age">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over">Over 65</option>
+            </select>
+
+        </div>
+        <!--Fine Select fascia d'età-->
+
+        <!--Buttons-->
+        <div class="ticket-generator-row">
+            <button id="generate-button">Genera</button>
+            <button id="cancel-button">Annulla</button>
+        </div>
+        <!--Fine Buttons-->
+        
+    </div>
+
+    <div class="ticket-result">
+        <div class="ticket-result-row">
+            Nome passeggero: <span id="result-user-name"></span>
+        </div>
+        <div class="ticket-result-row">
+            Offerta <span id="result-offer"></span>
+        </div>
+        <div class="ticket-result-row">
+            Carrozza
+        </div>
+        <div class="ticket-result-row">
+            Codice 
+        </div>
+        <div class="ticket-result-row">
+            Prezzo biglietto <span id="result-price"></span>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
