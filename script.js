@@ -88,5 +88,4 @@ cancelButton.addEventListener('click', function( ) {
     document.getElementById('generator-km').value = '';
     document.getElementById('generator-age').value = '';
 
-    
 });
