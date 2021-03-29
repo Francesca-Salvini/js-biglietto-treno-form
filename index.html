@@ -6,66 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcola prezzo biglietto</title>
 
+    <!--Link a Google Fonts: Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
+    <main>
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+
+        <div class="ticket-generator">
+
+            <div class="flex-content">
+                <!--Input nome utente-->
+                <div class="ticket-generator-row" >
+                    <label for="generator-user-name">Nome Cognome</label>
+                    <input id="generator-user-name" type="text">
+                </div>
+                <!--Fine Input nome utente-->    
+    
+                <!--Input km da percorrere-->
+                <div class="ticket-generator-row">
+                    <label for="generator-km">Km da percorrere</label>
+                    <input id="generator-km" type="number">
+                </div>
+                <!-- Fine Input km da percorrere-->
         
-    <div class="ticket-generator">
-
-        <!--Input nome utente-->
-        <div class="ticket-generator-row" >
-            <label for="generator-user-name">Nome utente</label>
-            <input id="generator-user-name" type="text">
-        </div>
-        <!--Fine Input nome utente-->    
-
-        <!--Input km da percorrere-->
-        <div class="ticket-generator-row">
-            <label for="generator-km">Km da percorrere</label>
-            <input id="generator-km" type="number">
-        </div>
-        <!-- Fine Input km da percorrere-->
-
-        <!--Select fascia d'età-->
-        <div class="ticket-generator-row">
-            <label for="generator-age">Fascia d'età</label>
-            <select id="generator-age">
-                <option value="minorenne">Minorenne</option>
-                <option value="maggiorenne">Maggiorenne</option>
-                <option value="over">Over 65</option>
-            </select>
-
-        </div>
-        <!--Fine Select fascia d'età-->
-
-        <!--Buttons-->
-        <div class="ticket-generator-row">
-            <button id="generate-button">Genera</button>
-            <button id="cancel-button">Annulla</button>
-        </div>
-        <!--Fine Buttons-->
+                <!--Select fascia d'età-->
+                <div class="ticket-generator-row">
+                    <label for="generator-age">Fascia d'età</label>
+                    <select id="generator-age">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over">Over 65</option>
+                    </select>
         
-    </div>
+                </div>
+                <!--Fine Select fascia d'età-->
+            </div>
+            
+    
+            <!--Buttons-->
+            <div class="ticket-generator-row buttons">
+                <button id="generate-button">Genera</button>
+                <button id="cancel-button">Annulla</button>
+            </div>
+            <!--Fine Buttons-->
+            
+        </div>
+        
+        <h2>Il tuo biglietto</h2>
 
-    <div class="ticket-result">
-        <div class="ticket-result-row">
-            Nome passeggero: <span id="result-user-name"></span>
-        </div>
-        <div class="ticket-result-row">
-            Offerta <span id="result-offer"></span>
-        </div>
-        <div class="ticket-result-row">
-            Carrozza
-        </div>
-        <div class="ticket-result-row">
-            Codice 
-        </div>
-        <div class="ticket-result-row">
-            Prezzo biglietto <span id="result-price"></span>
-        </div>
+        
+            <div class="ticket-result">
+                <div class="flex-content">
+                    <div class="ticket-result-row">
+                        Nome passeggero: <span id="result-user-name"></span>
+                    </div>
+                    <div class="ticket-result-row">
+                        Offerta <span id="result-offer"></span>
+                    </div>
+                    <div class="ticket-result-row">
+                        Carrozza
+                    </div>
+                    <div class="ticket-result-row">
+                        Codice 
+                    </div>
+                    <div class="ticket-result-row">
+                        Prezzo biglietto <span id="result-price"></span>
+                    </div>
+        
+                </div>
+            </div>
+        
+    </main>
+        
 
-    </div>
 
     <script type="text/javascript" src="script.js"></script>
 </body>

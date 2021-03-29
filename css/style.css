@@ -4,13 +4,53 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #b91550;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #b91550;
 
+}
 
-.ticket-result-row,
-.ticket-generator.row {
-    padding: 10px 20px;
+.flex-content {
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-result,
+.ticket-generator {
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 0;
+    
+    
+}
+
+.ticket-generator {
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px #202020;
+}
+
+.ticket-generator-row {
+    padding: 20px 50px;
+}
+
+.ticket-generator-row input, .ticket-generator-row select {
+    display: block;
+}
+
+.buttons {
+    text-align: center;
 }
 
 .button {
     padding: 5px;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
 }
