@@ -27,8 +27,23 @@ generateButton.addEventListener('click', function () {
     console.log(userOffer);
 
     //Carrozza
+    function randomNumberCarrozza(min, max) {
+        var randomNumber = Math.floor(Math.random() * (max - min + 1 ) ) + min;
+        return randomNumber;
+    }
+
+    var numeroCarrozza = randomNumberCarrozza(1, 10);
+    console.log(numeroCarrozza);
 
     //Codice CP 
+
+    function randomNumberTreno(min, max) {
+        var randomNumber = Math.floor(Math.random() * (max - min + 1 ) ) + min;
+        return randomNumber;
+    }
+
+    var numeroTrenoRandom = randomNumberTreno(90000, 100000 );
+    console.log(numeroTrenoRandom);
 
     //Prezzo biglietto
 
@@ -58,6 +73,11 @@ generateButton.addEventListener('click', function () {
     //Prezzo biglietto (finalPrice)
     document.getElementById('result-price').innerHTML = finalPrice.toFixed(2) + ' euro';
 
+    //Carrozza (numeroCarrozza)
+    document.getElementById('result-carrozza').innerHTML = numeroCarrozza;
+
+    //Codice CP (numeroTrenoRandom)
+    document.getElementById('result-codice-treno').innerHTML = numeroTrenoRandom;
 });
 
 //Funzionalità del bottone Annulla
