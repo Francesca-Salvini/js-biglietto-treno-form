@@ -36,16 +36,24 @@ body {
     padding: 20px 50px;
 }
 
+.ticket-generator-row label {
+    display: inline-block;
+    padding: 10px 0;
+}
+
 .ticket-generator-row input, .ticket-generator-row select {
     display: block;
 }
 
 .buttons {
     text-align: center;
+    
 }
 
-.button {
+.ticket-generator-row button {
     padding: 5px;
+    color: #b91550 ;
+   
 }
 
 h1, h2 {
@@ -53,4 +61,38 @@ h1, h2 {
     text-align: center;
     text-transform: uppercase;
     padding: 20px 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: black; 
+    padding-left: 20px;
+}
+
+.ticket-result-row  {
+    height: 180px;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    padding-left: 20px;
+}
+
+.ticket-result-row:first-child {
+    border: 0;
+}
+
+.ticket-result-row:last-child {
+    margin-right: 20px;
+}
+
+.ticket-result-row span {
+    display: block;
+    line-height: 180px
+}
+.ticket-result-row p {
+    background-color: #808080;
+    color: black;
+    height: 180px;
+    text-transform: uppercase;
+    
+
 }
