@@ -88,11 +88,11 @@ cancelButton.addEventListener('click', function( ) {
     document.getElementById('generator-km').value = '';
     document.getElementById('generator-age').value = '';
 
-    document.getElementById('result-user-name').innerHTML.value = '';
-    document.getElementById('result-offer').value = '';
-    document.getElementById('result-carrozza').value = '';
-    document.getElementById('result-codice-treno').value = '';
-
+    document.getElementById('result-user-name').innerHTML = '';
+    document.getElementById('result-offer').innerHTML = '';
+    document.getElementById('result-carrozza').innerHTML = '';
+    document.getElementById('result-codice-treno').innerHTML = '';
+    document.getElementById('result-price').innerHTML = '';
 
 
 });
