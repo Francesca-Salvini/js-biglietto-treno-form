@@ -105,3 +105,13 @@ h3 {
     padding-top: 20px;
     width: 70%;
 }
+
+.hidden {
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.show {
+    opacity: 1;
+    transition: 0.1s;
+}

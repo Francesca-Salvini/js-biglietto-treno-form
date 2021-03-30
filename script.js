@@ -78,16 +78,24 @@ generateButton.addEventListener('click', function () {
 
     //Codice CP (numeroTrenoRandom)
     document.getElementById('result-codice-treno').innerHTML = numeroTrenoRandom;
+
+    document.getElementById("biglietto").className = 'show';
+
 });
 
 //Funzionalità del bottone Annulla
 var cancelButton = document.getElementById('cancel-button');
 cancelButton.addEventListener('click', function( ) {
 
+    //Nascondiamo il biglietto
+    document.getElementById("biglietto").className = 'hidden';
+
+    //Svuotiamo gli input
     document.getElementById('generator-user-name').value = '';
     document.getElementById('generator-km').value = '';
     document.getElementById('generator-age').value = '';
 
+    //Svuotiamo le informazioni sottostanti
     document.getElementById('result-user-name').innerHTML = '';
     document.getElementById('result-offer').innerHTML = '';
     document.getElementById('result-carrozza').innerHTML = '';
@@ -95,4 +103,5 @@ cancelButton.addEventListener('click', function( ) {
     document.getElementById('result-price').innerHTML = '';
 
 
+    
 });
